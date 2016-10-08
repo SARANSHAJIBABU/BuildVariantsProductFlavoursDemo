@@ -25,12 +25,16 @@ android {
     productFlavors {
         free {
             applicationId "com.alpha.saran.buildvariantsdemo.free"
-            resValue "string", "app_name", "Free App"
+            manifestPlaceholders = [
+                    appName: "Free Version"
+            ]
         }
 
         pro {
             applicationId "com.alpha.saran.buildvariantsdemo.pro"
-            resValue "string", "app_name", "Pro App"
+            manifestPlaceholders = [
+                    appName: "Pro Version"
+            ]
         }
     }
 
