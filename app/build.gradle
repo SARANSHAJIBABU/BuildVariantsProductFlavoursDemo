@@ -16,10 +16,25 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        debug {
+
+        debug{
             applicationIdSuffix ".debug"
         }
     }
+
+    productFlavors {
+        free {
+            applicationId "com.alpha.saran.buildvariantsdemo.free"
+            resValue "string", "app_name", "Free App"
+        }
+
+        pro {
+            applicationId "com.alpha.saran.buildvariantsdemo.pro"
+            resValue "string", "app_name", "Pro App"
+        }
+    }
+
+
 }
 
 dependencies {
