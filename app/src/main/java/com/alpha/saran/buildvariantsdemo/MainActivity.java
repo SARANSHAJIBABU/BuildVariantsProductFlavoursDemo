@@ -1,7 +1,7 @@
 package com.alpha.saran.buildvariantsdemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.alpha.saran.buildvariantsdemo.util.Util;
